@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cineebox</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>Cineebox</h1>
+    <p>Bienvenue sur Cineebox, votre site de films !</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Films disponibles</h2>
+      <ul>
+        <li>Film 1</li>
+        <li>Film 2</li>
+        <li>Film 3</li>
+        <!-- Ajoute ici tous tes films -->
+      </ul>
+    </section>
+    <section>
+      <h2>Suggestions</h2>
+      <p>Proposez vos films préférés ici !</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cineebox</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker enregistré !'));
+    }
+  </script>
+</body>
+</html>
